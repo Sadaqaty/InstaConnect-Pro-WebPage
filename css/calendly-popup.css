@@ -1,0 +1,74 @@
+/* Calendly Popup Styles */
+.calendly-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.calendly-popup-overlay.visible {
+    display: flex;
+    opacity: 1;
+}
+
+.calendly-popup-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.calendly-popup-overlay.visible .calendly-popup-container {
+    transform: translateY(0);
+}
+
+.calendly-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #6b7280;
+    cursor: pointer;
+    z-index: 1002;
+    transition: color 0.2s ease;
+}
+
+.calendly-close:hover {
+    color: #1f2937;
+}
+
+.calendly-inline-widget {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .calendly-popup-container {
+        width: 95%;
+        height: 90vh;
+    }
+    
+    .calendly-close {
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+    }
+}

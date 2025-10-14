@@ -47,15 +47,12 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Calendly Popup CSS -->
+    <link rel="stylesheet" href="css/calendly-popup.css">
 
-    <!-- <script>
-        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog && window.posthog.__loaded) || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init Fe Us zs Oe js Ns capture Ze calculateEventProperties Hs register register_once register_for_session unregister unregister_for_session Js getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Gs qs createPersonProfile Vs As Ks opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Bs debug L Ws getPageViewId captureTraceFeedback captureTraceMetric".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
-        posthog.init('phc_bS6K8lvIpPwQFDduEp4T4Fg9sb8VTzdg5uy1VDtx1a6', {
-            api_host: 'https://us.i.posthog.com',
-            defaults: '2025-05-24',
-            person_profiles: 'always', // or 'always' to create profiles for anonymous users as well
-        })
-    </script> -->
+    <!-- Calendly Popup Script -->
+    <script src="js/calendly-popup.js"></script>
 </head>
 
 <body>
@@ -177,56 +174,83 @@
 
     <section id="download" class="download">
         <div class="container">
-            <h2>Download Chunker</h2>
-            <div class="download-options">
-                <div class="download-option">
-                    <h3><i class="fab fa-python"></i> Source Code</h3>
-                    <p>For Python developers who want to run from source:</p>
-                    <pre><code>pip install tkinter
-python splitter-v1.py</code></pre>
-                    <a href="https://github.com/SecureNet-Dynamics/CSV-Splitter" class="btn btn-secondary"
-                        target="_blank">View on GitHub</a>
-                </div>
-                <div class="download-option">
-                    <h3><i class="fas fa-download"></i> Stand-alone Executables</h3>
-                    <p>"Ready-to-run versions for all major platforms Except macOS :)"</p>
-                    <div class="os-buttons">
-                        <a href="https://github.com/SecureNet-Dynamics/CSV-Splitter/releases/download/v1.0.0/Chunker.exe"
-                            class="os-btn windows"><i class="fab fa-windows"></i> Windows</a>
-                        <a href="https://github.com/SecureNet-Dynamics/CSV-Splitter" class="os-btn macos"><i
-                                class="fab fa-apple"></i> macOS</a>
-                        <a href="https://github.com/SecureNet-Dynamics/CSV-Splitter/releases/download/v1.0.0/Chunker-linux"
-                            class="os-btn linux"><i class="fab fa-linux"></i> Linux</a>
+            <div class="section-header">
+                <h2>Get Started with InstaConnect Pro</h2>
+                <p class="section-subtitle">Schedule a personalized demo to see how InstaConnect Pro can transform your Instagram outreach</p>
+            </div>
+            
+            <div class="pricing-options">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>InstaConnect Pro</h3>
+                        <div class="price">Custom Pricing</div>
+                        <p class="billing">Tailored to your business needs</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited Campaigns</li>
+                            <li><i class="fas fa-check"></i> Bulk Messaging</li>
+                            <li><i class="fas fa-check"></i> Smart Personalization</li>
+                            <li><i class="fas fa-check"></i> Automated Follow-ups</li>
+                            <li><i class="fas fa-check"></i> Performance Analytics</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" data-calendly-trigger class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-alt"></i> Book a Demo
+                        </a>
+                        <p class="small">No commitment required • 30-minute consultation</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="enterprise-cta">
+                <h3>Enterprise Solutions</h3>
+                <p>Need a custom solution for your team? We offer enterprise packages with additional features and dedicated support.</p>
+                <a href="mailto:hi@fixare.studio" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Sales
+                </a>
             </div>
         </div>
     </section>
 
     <section class="usage">
         <div class="container">
-            <h2>How to Use Chunker</h2>
+            <h2>How InstaConnect Pro Works</h2>
+            <p class="section-subtitle">Get started with Instagram outreach in just a few simple steps</p>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Browse for CSV file</h3>
-                    <p>Click the 'Browse' button to select your large CSV file.</p>
+                    <div class="step-icon"><i class="fas fa-users"></i></div>
+                    <h3>Import Your Audience</h3>
+                    <p>Easily import your Instagram followers or upload a list of target usernames. InstaConnect Pro supports multiple import formats and connects directly to your Instagram account.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Adjust settings</h3>
-                    <p>Choose how you want to split your file (by rows or number of files).</p>
+                    <div class="step-icon"><i class="fas fa-edit"></i></div>
+                    <h3>Craft Your Message</h3>
+                    <p>Create personalized messages using our intuitive editor. Use dynamic fields to include the recipient's name, username, or other custom variables for maximum engagement.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Split CSV</h3>
-                    <p>Click 'Split' and watch the progress bar as your files are processed.</p>
+                    <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>Schedule & Send</h3>
+                    <p>Choose the perfect time to send your messages. Schedule campaigns in advance or send them immediately. Our smart scheduler ensures optimal delivery times.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Find split files</h3>
-                    <p>Access your split files in the output directory you specified.</p>
+                    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Track & Optimize</h3>
+                    <p>Monitor your campaign's performance in real-time. Track opens, replies, and conversions to continuously improve your outreach strategy.</p>
                 </div>
+            </div>
+            <div class="cta-container" style="margin-top: 3rem; text-align: center;
+            ">
+                <a href="#" data-calendly-trigger class="btn btn-primary btn-large">
+                    <i class="fas fa-play-circle"></i> See It In Action
+                </a>
+                <p class="text-sm">Schedule a live demo with our team</p>
             </div>
         </div>
     </section>
