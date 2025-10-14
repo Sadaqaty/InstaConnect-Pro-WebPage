@@ -1,11 +1,11 @@
 {
-  "name": "Chunker - CSV File Splitter",
-  "short_name": "Chunker",
-  "description": "Easily split large CSV files into smaller, manageable chunks with our fast and efficient software.",
+  "name": "InstaConnect Pro - Instagram Outreach Tool",
+  "short_name": "InstaConnect Pro",
+  "description": "Grow your Instagram presence with powerful, automated outreach and engagement tools. Connect with your audience like never before.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "theme_color": "#6366f1",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -38,33 +38,39 @@
   ],
   "screenshots": [
     {
-      "src": "/images/splitter.png",
+      "src": "/images/dashboard.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Chunker - CSV File Splitter"
+      "label": "InstaConnect Pro Dashboard"
     }
   ],
-  "categories": ["utilities", "productivity", "developer-tools"],
+  "categories": ["social", "marketing", "business", "productivity"],
   "shortcuts": [
     {
-      "name": "Split CSV File",
-      "short_name": "Split",
-      "description": "Start splitting your CSV file",
-      "url": "/#download"
+      "name": "Book a Demo",
+      "short_name": "Demo",
+      "description": "Schedule a personalized demo of InstaConnect Pro",
+      "url": "/#demo"
     },
     {
       "name": "View Features",
       "short_name": "Features",
-      "description": "See what Chunker can do",
+      "description": "Explore InstaConnect Pro features",
       "url": "/#features"
+    },
+    {
+      "name": "Pricing",
+      "short_name": "Pricing",
+      "description": "See our flexible pricing plans",
+      "url": "/#pricing"
     }
   ],
   "prefer_related_applications": false,
   "related_applications": [
     {
       "platform": "web",
-      "url": "https://chunker.fixare.studio"
+      "url": "https://instaconnect.fixare.studio"
     }
   ]
 }
