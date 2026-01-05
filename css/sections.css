@@ -361,13 +361,10 @@
 }
 
 .feature-highlight {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
     background: rgba(33, 37, 41, 0.95);
-    /* Dark background */
     padding: 25px;
     border-radius: 12px;
     color: white;
@@ -416,12 +413,7 @@
     }
 
     .feature-highlight {
-        position: relative;
-        transform: none;
-        left: auto;
-        bottom: auto;
-        width: 100%;
-        margin-top: -20px;
+        margin-top: 0;
         border-radius: 0 0 12px 12px;
     }
 }
