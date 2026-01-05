@@ -467,3 +467,43 @@
         grid-column: auto;
     }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .download {
+        padding: 60px 0;
+    }
+    
+    .download h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .pricing-options {
+        gap: 20px;
+    }
+    
+    .pricing-card {
+        padding: 25px;
+    }
+    
+    .pricing-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .price {
+        font-size: 1.2rem;
+    }
+    
+    .pricing-features ul li {
+        font-size: 0.95rem;
+    }
+    
+    .enterprise-cta h3 {
+        font-size: 1.2rem;
+    }
+    
+    .enterprise-cta p {
+        font-size: 0.95rem;
+    }
+}

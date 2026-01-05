@@ -112,3 +112,43 @@
         justify-content: flex-start;
     }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .hero {
+        padding: 100px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero .subheadline {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero .company {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-buttons {
+        margin: 1.5rem auto 0;
+    }
+    
+    .hero-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .feature-highlights {
+        margin-top: 20px;
+    }
+    
+    .feature-highlights span {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
